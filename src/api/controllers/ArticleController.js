@@ -31,7 +31,7 @@ class ArticleController {
 
   static async getArticles(req) {
     const limit = +req.query.limit || 10;
-    const page = +req.query.page || 0;
+    const page = +req.query.page || 1;
     // const orderBy = req.query.page;
 
     const response = await ArticleModel.find()
